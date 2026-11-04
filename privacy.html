@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="見通し 個人用における、予定データとGoogleアカウント情報の利用、保存、共有、削除について。">
+  <meta name="robots" content="noindex">
+  <title>プライバシーポリシー | 見通し 個人用</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <div class="wrap">
+    <header><a class="brand" href="index.html">見通し<span>個人用</span></a><nav aria-label="メインナビゲーション"><a href="index.html">アプリについて</a></nav></header>
+    <main id="main" class="policy">
+      <p class="eyebrow">PRIVACY</p>
+      <h1>プライバシーポリシー</h1>
+      <p class="date">最終更新日：2026年11月4日 · 対象：見通し 個人用 v0.5.0</p>
+      <p>見通し 個人用（以下「本アプリ」）は、開発・管理者本人が予定を管理するためのMac・Android向けアプリです。本ポリシーでは、本アプリが扱う情報と、任意のGoogle連携での利用方法を説明します。</p>
+
+      <h2>1. 取り扱う情報と利用目的</h2>
+      <ul>
+        <li><strong>入力した予定データ：</strong>プロジェクト、目標、タスク、期限、作業時間、イベント、メモなど。予定の表示・編集・バックアップ、および有効にした場合の端末間同期に使用します。</li>
+        <li><strong>Googleアカウントの識別情報とメールアドレス：</strong>接続先アカウントの識別とアプリ内の接続先表示に使用します。</li>
+        <li><strong>Googleへの接続に必要な認証情報：</strong>許可された範囲で、本人のGoogle Driveに同期データを読み書きするために使用します。Googleのパスワードを本アプリへ入力する必要はありません。</li>
+      </ul>
+
+      <h2>2. Google連携の範囲</h2>
+      <p>Googleへの接続は利用者が選択できます。接続しなくても、端末内で予定を管理できます。</p>
+      <table>
+        <thead><tr><th scope="col">権限</th><th scope="col">用途</th></tr></thead>
+        <tbody>
+          <tr><td><code>drive.appdata</code></td><td>Google Drive内の、本アプリ専用の保存領域で同期データを読み書きします。</td></tr>
+          <tr><td><code>openid</code></td><td>接続先のGoogleアカウントを識別します。</td></tr>
+          <tr><td><code>email</code></td><td>接続先のメールアドレスをアプリ内に表示します。</td></tr>
+        </tbody>
+      </table>
+      <p>通常のGoogle Driveファイル全体、Gmailのメール本文、Googleカレンダーの予定へのアクセス権限は要求しません。本アプリによるGoogle APIから取得した情報の使用および転送は、Limited Useの要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+
+      <h2>3. 保存先と保護</h2>
+      <p>予定データと同期用の履歴・キャッシュは端末内に保存します。Google同期を利用する場合は、予定データを含む同期履歴を本人のGoogle Driveのアプリ専用領域（appDataFolder）にも保存します。通常のDriveのファイル一覧には表示されない領域です。</p>
+      <p>MacのGoogle認証情報はキーチェーンを利用して保存します。Androidの認証はGoogleのログイン機能を利用し、アカウントの表示情報と接続設定は端末の保護された保存領域で管理します。同期先を区別するアカウントIDとアプリの接続設定IDは、端末内の同期管理ファイルにも保存します。認証用のトークンは予定データの書き出しファイルに含めません。</p>
+      <p>端末内の予定データや書き出したバックアップに、本アプリ独自の暗号化は行っていません。端末やバックアップの保存先は、利用者が管理します。</p>
+
+      <h2>4. 外部への送信・共有</h2>
+      <p>Google連携時は、端末からGoogleの認証・保存サービスへ通信します。本アプリ専用の開発者サーバーに予定データを送信する仕組みはありません。取得したGoogleユーザーデータを販売したり、広告配信・行動分析に利用したりする機能もありません。</p>
+      <p>Googleのサービスでの情報の扱いは、<a href="https://policies.google.com/privacy?hl=ja">Googleのプライバシーポリシー</a>も適用されます。この案内サイトには独自のアクセス解析や広告を設置していません。公開先のサービスでは、サイト配信に伴うアクセス記録が保存される場合があります。</p>
+
+      <h2>5. 保持・削除と接続の解除</h2>
+      <p>端末内の予定は、アプリの利用中に保存します。同期前の自動バックアップは同期成功後に最新20件へ整理し、キャッシュは容量を制限して保持します。利用者が書き出したバックアップは別に保存され、保存先にクラウドサービスを選んだ場合はそのサービス上にも残ります。</p>
+      <p>同期のためにGoogle Driveへ作成した過去の履歴は、現在の版では自動削除しません。アプリ上でタスクやイベントを削除しても、以前の同期履歴、キャッシュ、バックアップには情報が残ることがあります。</p>
+      <p>アプリの「接続を解除」は、Googleへの接続を終了する操作です。端末内の予定、バックアップ、Google Driveに保存済みの同期履歴は削除しません。Googleアカウント側でアクセス許可を取り消すこともできます。</p>
+      <p>予定データと同期履歴を削除する場合は、同期を停止し、各端末で接続を解除したうえで、同期する各端末の保存データ・キャッシュ・バックアップと、Google Driveの本アプリ専用データをそれぞれ削除する必要があります。別の端末や書き出したファイルに残したデータにもご注意ください。</p>
+
+      <h2>6. 操作の調査記録</h2>
+      <p>Macの操作記録版では、クリックの反応を調べるため、操作の種類・位置・時刻・処理時間などを端末内に記録します。記録は容量を制限して順に置き換えます。タスクのタイトル、Googleのメールアドレス、認証情報はこの操作記録に含めず、自動で外部に送信することもありません。</p>
+
+      <h2>7. 変更とお問い合わせ</h2>
+      <p>管理者：spinterufumi-gif。機能やデータの扱いを変更する場合は、このページも更新します。お問い合わせは、Googleの同意画面に表示されるユーザーサポートメール宛にお願いします。</p>
+    </main>
+    <footer><span>見通し 個人用</span><div><a href="index.html">アプリの案内へ戻る</a></div></footer>
+  </div>
+</body>
+</html>
